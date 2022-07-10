@@ -10,7 +10,7 @@ export default function Slides({data}) {
 
     setfiltered(data[item]);
   },[item])
-  const changeSlide=(para="")=>{
+  const changeSlide=(para)=>{
     if(para=="next" && item<len-1){
     setitem(item+1)}
     else if(para=="reset" ){
